@@ -256,6 +256,17 @@ html,body {
 .mobile-nav1 .mobile-buttons .btn-signIn,.mobile-nav1 .mobile-buttons .btn-signUp {
     width: 45%;
 }
+.mobile-nav1 .mobile-buttons .btn-signIn {
+    color: #fafcff;
+    border: 1px solid #1c2340;
+}
+
+.mobile-nav1 .mobile-buttons .btn-signUp::after {
+    content: url("../image/present_btn.png");
+    position: absolute;
+    margin-top: -14px;
+    margin-left: 10px;
+}
 .mobile-nav1 .mobile-social-media {
     width: 100%;
     display: none;
@@ -1123,7 +1134,7 @@ section {
 }
 .section-sliding .box {
     animation-name: slide;
-    animation-duration: 40s;
+    animation-duration: 35s;
     animation-iteration-count: infinite;
     transition:1s all;
     -webkit-transition:1s all;
@@ -1152,13 +1163,12 @@ section {
 }
 @keyframes slide {
     100%{
-        transform: translate3d(-1500px,0,0px);
-        -webkit-transform: translate3d(-1500px,0,0px);
-        -moz-transform: translate3d(-1500px,0,0px);
-        -ms-transform: translate3d(-1500px,0,0px);
-        -o-transform: translate3d(-1500px,0,0px);
-    }
-    
+        transform: translate3d(-1500px,0,0);
+        -webkit-transform: translate3d(-1500px,0,0);
+        -moz-transform: translate3d(-1500px,0,0);
+        -ms-transform: translate3d(-1500px,0,0);
+        -o-transform: translate3d(-1500px,0,0);
+}   
 }
 /*---------SECTION-FOOTER---------*/
 footer {
@@ -1548,6 +1558,12 @@ footer .phone-number {
         min-width: 100%;
         
     }
+    .section-profitCalculator .profit-amount:nth-child(1){
+        padding-right: 8%;
+    }
+    .section-profitCalculator .profit-amount:nth-child(2){
+        padding-left: 10%;
+    }
 }
 @media screen and (max-width:556px) {
     .section-profitCalculator .level .text-white {
@@ -1571,5 +1587,38 @@ footer .phone-number {
         font-size: 20px;
         height: 27px;
         width: 28px;
+    }
+    .level .text-white .percent {
+        font-size: 12px;
+    }
+    .level .text-white .rate {
+        font-size: 10px;
+    }
+    .sign-in h2 ,.sign-up h2 {
+        font-size: 60px;
+    }
+    .features-item:nth-child(1){
+        left: 180px;
+    }
+    .features-item:nth-child(2){    
+        left: 40px;
+    }
+    .features-item:nth-child(3){
+        left: 175px;
+        margin-bottom: 160px;
+    }
+    .features-item:nth-child(4){
+        left: 0px;
+        margin-top: 265px;
+    }
+    .features-item:nth-child(5){
+        left: 180px;
+        margin-top: 250px;
+        
+    }
+    .features-item:nth-child(6){
+        left: 100px;
+        margin-bottom: -85px;
+        
     }
 }
