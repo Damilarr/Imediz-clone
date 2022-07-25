@@ -229,7 +229,8 @@ html,body {
     -o-transition: .5s all;
 }
 .mobile-nav1 .close {
-    background-color: #fafcff;
+    color: #898fb2;
+    font-size: 35px;
     border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
@@ -1230,7 +1231,7 @@ footer .phone-number {
     }
     header .buttons .fa-bars-staggered {
         display: inherit;
-        color: #fafcff;
+        color: #898fb2;
         font-size: 25px;
         text-decoration: none;
     }
@@ -1622,4 +1623,13 @@ footer .phone-number {
         margin-bottom: -85px;
         
     }
+}
+@media screen and (max-width:357px) {
+    .mobile-nav1 {
+        width: 80%;
+}
+    .mobile-nav1 .mobile-buttons .btn-signUp::after {
+        margin-top: -14px;
+        margin-left: 0px;
+    }    
 }
