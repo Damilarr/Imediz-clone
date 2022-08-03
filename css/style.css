@@ -1136,13 +1136,9 @@ section {
 }
 .section-sliding .box {
     animation-name: slide;
-    animation-duration: 35s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
-    transition:1s all;
-    -webkit-transition:1s all;
-    -moz-transition:1s all;
-    -ms-transition:1s all;
-    -o-transition:1s all;
+    animation-timing-function: linear;
 }
 .section-sliding .price {
     display: block;
